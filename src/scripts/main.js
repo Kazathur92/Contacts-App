@@ -1,7 +1,10 @@
 // In main.js, import the ContactList component and the
 //  ContactForm component.
 
-import localStorage from "./ContactList"
-import ContactForm from "./ContactForm"
+// import  from "./ContactList"
+// import ContactForm from "./ContactForm"
 // import SandwichMaker from "./Contact"
 
+import retrieveData from "./ContactList"
+
+// console.log(retrieveData)

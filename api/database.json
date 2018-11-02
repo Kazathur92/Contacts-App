@@ -1,3 +1,18 @@
 {
-  "contacts": []
+  "contacts": [
+    {
+      "name": "Alfonso",
+      "last_name": "Miranda",
+      "age": "26",
+      "phone": "956-732-9151",
+      "id": 1
+    },
+    {
+      "name": "Noah",
+      "last_name": "Woods",
+      "age": "20",
+      "phone": "703-955-2061",
+      "id": 2
+    }
+  ]
 }
