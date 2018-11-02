@@ -1,8 +1,7 @@
-import sayHello from "./hello"
-import sayGoodbye from "./goodbye"
-import SandwichMaker from "./sandwichMaker"
+// In main.js, import the ContactList component and the
+//  ContactForm component.
 
-sayHello()
-sayGoodbye()
+import localStorage from "./ContactList"
+import ContactForm from "./ContactForm"
+// import SandwichMaker from "./Contact"
 
-SandwichMaker.placeOrder("rye", "capicola", "provolone")
