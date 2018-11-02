@@ -1,11 +1,7 @@
-// component that, when filled out and a submit button is pressed, 
-// adds a new contact to storage. It should import the 
+// component that, when filled out and a submit button is pressed,
+// adds a new contact to storage. It should import the
 // ContactCollection component.
 
-import ContactCollection from "./ContactCollection"
+// import contactData from "./ContactCollection"
 
-
-
-
-
-export default ContactForm "./main.js"
+// export default ContactForm "./main.js"
