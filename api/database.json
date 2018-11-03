@@ -3,6 +3,8 @@
     {
       "name": "Alfonso",
       "last_name": "Miranda",
+      "address": "2929 Steamboat Dr, Nashville, TN",
+      "email": "gabmin21@hotmail.com",
       "age": "26",
       "phone": "956-732-9151",
       "id": 1
@@ -10,6 +12,8 @@
     {
       "name": "Noah",
       "last_name": "Woods",
+      "address": "123 Sesame St, HoomperTown, NY",
+      "email": "bigbird_elmo@sesame.st",
       "age": "20",
       "phone": "703-955-2061",
       "id": 2
