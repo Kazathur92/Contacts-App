@@ -1,10 +1,9 @@
 // In main.js, import the ContactList component and the
 //  ContactForm component.
 
-// import  from "./ContactList"
-// import ContactForm from "./ContactForm"
-// import SandwichMaker from "./Contact"
+import getContactList from "./ContactList"
 
-import retrieveData from "./ContactList"
+import postNewContact from "./ContactForm"
 
-// console.log(retrieveData)
+postNewContact()
+getContactList()

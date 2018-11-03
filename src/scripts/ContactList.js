@@ -1,13 +1,15 @@
 // component that displays all contacts. It should import the
 // Contact component and the ContactCollection component.
 
-// import contactData from "./ContactCollection"
+
 import hoot from "./Contact"
 import contactData from "./ContactCollection"
 
+let getContactList = () => {
+
 let counter = 0
 
-let woop = contactData.getContacts().then((response) => {
+contactData.getContacts().then((response) => {
 
   // let Alfonso = response[0]
 
@@ -20,26 +22,21 @@ let woop = contactData.getContacts().then((response) => {
 
     let object = response[i]
 
-    $("#container").append(`<h2>${object.name}
-    ${object.last_name}</h2><button id="infoButton_${[i]}">Contact Informations</button>`)
+    $("#container").append(`<div id="contact_${object.id}"><h2>${object.name}
+    ${object.last_name}</h2>
+    <section id="dropInfo_${object.id}" class='hidden'><p>Email: ${object.email}</p>
+    <p>Address: ${object.address}</p>
+    <p>Age: ${object.age} years old</p>
+    <p>Phone: ${object.phone}</p></section>
+    <button class="contactInfo" id="infoButton_${object.id}">Contact Information</button></div>`)
 
     counter++
-
-
-    // console.log(objects.name)
-
-    // for (const keys in objects) {
-    //   const element = objects[keys]
-
-    //   // console.log(element)
-
-    //   $("#container").append(`<h2>${element}<h2>`)
-    // }
   }
 
 
   return
 
 })
-
-// console.log(woop)
+return
+}
+export default getContactList

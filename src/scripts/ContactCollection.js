@@ -24,6 +24,9 @@ let contactData =
       },
       // body: JSON.stringify()
     })
+      // .then(function (response2) {
+      //   return response2.json()
+      // })
   }
 }
 

@@ -2,42 +2,16 @@
 
 import contactData from "./ContactCollection"
 
+let hoot = $(document).on("click", ".contactInfo", function() {
 
-let hoot =
+    var id_number = this.id.split('infoButton_')[1]
 
-// console.log("#infoButton_0")
+    $("#dropInfo_" + id_number).slideToggle()
 
-$("#infoButton_0").click( () => {
+    $("#dropInfo_" + id_number).toggleClass('hidden');
+  });
 
-return console.log("hi")
-
-//   $("#dropInfo").append("wooop")
-
-
-  // console.log("#infoButton_[i]")
-  //   $("#dropInfo").slideToggle()
-
-
-
-
-  // contactData.getContacts().then((response2) => {
-
-
-  //   for (let i = 0; i < response2.length; i++) {
-
-  //     let object = response2[i]
-
-  //     $("#container").append(`<p>${object.age}
-  //   ${object.phone}</p>`)
-
-  //   }
-
-
-
-
-
-  // })
-})
+export default hoot
 
 
 export default hoot

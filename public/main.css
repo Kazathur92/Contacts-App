@@ -1,0 +1,17 @@
+.contactInfo {
+  font-size: 15px;
+  color: black;
+}
+.hidden {
+  display: none;
+}
+.hidden2 {
+  display: none;
+}
+.flexBox {
+  display:flex;
+  flex-direction: column;
+}
+.saveContact {
+  font-size: 20px;
+}
