@@ -4,19 +4,38 @@
 <head>
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="stylesheet" href="main.css">
   <title>Browserify Boilerplate</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body>
   <article class="output">
-    <h1>contacts exercise</h1>
+    <h1>Contacts</h1>
   </article>
+  <div>
+    <h1>Add New Contact</h1>
+    <fieldset class="flexBox">
+      <label class="boxed" for="smallTextBox_1">Name</label>
+      <input type="text" class="journal" name="" id="addName">
+      <label class="boxed" for="smallTextBox_2">Last Name</label>
+      <input type="text" class="journal" name="" id="addLastName">
+      <label class="boxed" for="smallTextBox_3">Email</label>
+      <input type="text" class="journal" name="" id="addEmail">
+      <label class="boxed" for="smallTextBox_4">Adddress</label>
+      <input type="text" class="journal" name="" id="addAddress">
+      <label class="boxed" for="smallTextBox_5">Age</label>
+      <input type="text" class="journal" name="" id="addAge">
+      <label class="boxed" for="smallTextBox_6">Phone</label>
+      <input type="text" class="journal" name="" id="addPhone">
+      <button class="saveContact">Save Contact</button>
+    </fieldset>
+  </div>
 
+  <h2>Contacts List</h2>
+  <button class="listButton" id="listButton">Open List</button>
+  <div class="contactList" id="container">
 
-  <h2>List of Contacts</h2>
-  <div id="container">
-    <section id="dropInfo"></section>
   </div>
 
 
