@@ -11,22 +11,24 @@ let contactData =
       .then(function (response) {
         return response.json()
       })
-      // .then(function (json) {
-      //   return (JSON.stringify(json))
-      // })
+    // .then(function (json) {
+    //   return (JSON.stringify(json))
+    // })
 
   },
-  postContact: () => {
-    return fetch("http://localhost:8088/contacts", {
+  postContact: (newContact) => {
+    console.log('newContact', newContact)
+    fetch("http://localhost:8088/contacts", {
       method: "POST",
       headers: {
         "Content-Type": "application/json"
       },
-      // body: JSON.stringify()
+      body: JSON.stringify(newContact)
     })
-      // .then(function (response2) {
-      //   return response2.json()
-      // })
+      .then(function (response) {
+        console.log(response)
+        //return response2.json()
+      })
   }
 }
 
