@@ -12,7 +12,7 @@ import contactData from "./ContactCollection"
 
 let postNewContact = function addNewContact() {
 
-  $(document).on("click", ".saveContact", function() {
+  $(document).on("click", ".saveContact", function () {
 
     $(".message").remove()
     $(".error").remove()
@@ -23,14 +23,14 @@ let postNewContact = function addNewContact() {
 
     var valid_fields = []
     // var are_all_fields_valid = true;   *
-   $(".journal").map(function(index, current_el){
-      if ($(current_el)[0].value !== '' ){
+    $(".journal").map(function (index, current_el) {
+      if ($(current_el)[0].value !== '') {
         valid_fields.push(true)
       } else {
         valid_fields.push(false)
       }
 
-      if ($(current_el)[0].value === '' ){
+      if ($(current_el)[0].value === '') {
         // are_all_fields_valid = false;  *
       }
 
@@ -56,7 +56,7 @@ let postNewContact = function addNewContact() {
       console.log(newContact)
       contactData.postContact(newContact)
 
-      $(".journal").map(function(index, current_el){$(".journal")[0].value}) = ""
+      $(".journal").map(function (index, current_el) { $(".journal")[0].value }) = ""
 
       $("#error").append(`<div class="message">
       <h3>New contact has been saved, refresh to view on list.</h3>

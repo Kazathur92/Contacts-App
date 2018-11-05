@@ -11,9 +11,9 @@ let contactData =
       .then(function (response) {
         return response.json()
       })
-      // .then(function (json) {
-      //   return (JSON.stringify(json))
-      // })
+    // .then(function (json) {
+    //   return (JSON.stringify(json))
+    // })
 
   },
   postContact: (newContact) => {
@@ -25,10 +25,10 @@ let contactData =
       },
       body: JSON.stringify(newContact)
     })
-    .then(function (response) {
-      console.log(response)
-      //return response2.json()
-    })
+      .then(function (response) {
+        console.log(response)
+        //return response2.json()
+      })
   }
 }
 

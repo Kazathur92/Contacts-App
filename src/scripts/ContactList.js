@@ -7,22 +7,22 @@ import contactData from "./ContactCollection"
 
 let getContactList = () => {
 
-let counter = 0
+  let counter = 0
 
-contactData.getContacts().then((response) => {
+  contactData.getContacts().then((response) => {
 
-  // let Alfonso = response[0]
+    // let Alfonso = response[0]
 
-  // let Noah = response[1]
+    // let Noah = response[1]
 
 
-  // return console.log(Alfonso.name)
+    // return console.log(Alfonso.name)
 
-  for (let i = 0; i < response.length; i++) {
+    for (let i = 0; i < response.length; i++) {
 
-    let object = response[i]
+      let object = response[i]
 
-    $("#container").append(`<div id="contact_${object.id}"><h2>${object.name}
+      $("#container").append(`<div id="contact_${object.id}"><h2>${object.name}
     ${object.last_name}</h2>
     <section id="dropInfo_${object.id}" class='hidden'><p>Email: ${object.email}</p>
     <p>Address: ${object.address}</p>
@@ -30,13 +30,13 @@ contactData.getContacts().then((response) => {
     <p>Phone: ${object.phone}</p></section>
     <button class="contactInfo" id="infoButton_${object.id}">Contact Information</button></div>`)
 
-    counter++
-  }
+      counter++
+    }
 
 
+    return
+
+  })
   return
-
-})
-return
 }
 export default getContactList
