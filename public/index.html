@@ -11,34 +11,39 @@
 
 <body>
   <article class="output">
-    <h1>Contacts</h1>
+    <h1 class="appTitle">Contacts</h1>
   </article>
-  <div>
-    <h1>Add New Contact</h1>
-    <fieldset class="flexBox">
-      <label class="boxed" for="smallTextBox_1">Name</label>
-      <input type="text" class="journal" name="" id="addName">
-      <label class="boxed" for="smallTextBox_2">Last Name</label>
-      <input type="text" class="journal" name="" id="addLastName">
-      <label class="boxed" for="smallTextBox_3">Email</label>
-      <input type="text" class="journal" name="" id="addEmail">
-      <label class="boxed" for="smallTextBox_4">Adddress</label>
-      <input type="text" class="journal" name="" id="addAddress">
-      <label class="boxed" for="smallTextBox_5">Age</label>
-      <input type="text" class="journal" name="" id="addAge">
-      <label class="boxed" for="smallTextBox_6">Phone</label>
-      <input type="text" class="journal" name="" id="addPhone">
-      <button class="saveContact">Save Contact</button>
-    </fieldset>
+  <div class="appItself">
+    <div class="newContactDiv">
+      <h1 id="newContact">Add New Contact</h1>
+      <fieldset class="flexBox">
+        <label class="boxed" for="smallTextBox_1">Name</label>
+        <input type="text" class="journal" name="" id="addName">
+        <label class="boxed" for="smallTextBox_2">Last Name</label>
+        <input type="text" class="journal" name="" id="addLastName">
+        <label class="boxed" for="smallTextBox_3">Email</label>
+        <input type="text" class="journal" name="" id="addEmail">
+        <label class="boxed" for="smallTextBox_4">Adddress</label>
+        <input type="text" class="journal" name="" id="addAddress">
+        <label class="boxed" for="smallTextBox_5">Age</label>
+        <input type="text" class="journal" name="" id="addAge">
+        <label class="boxed" for="smallTextBox_6">Phone</label>
+        <input type="text" class="journal" name="" id="addPhone">
+        <button class="saveContact">Save Contact</button>
+      </fieldset>
+
+    </div>
+
+    <div class="contactList" id="container">
+      <h2 class="contactListTitle">Contacts List</h2>
+      <button class="listButton" id="listButton">Open List</button>
+
+    </div>
   </div>
 
-  <h2>Contacts List</h2>
-  <button class="listButton" id="listButton">Open List</button>
-  <div class="contactList" id="container">
+  <section id="error">
 
-  </div>
-
-
+    </section>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="bundle.js"></script>

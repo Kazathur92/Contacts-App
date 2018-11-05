@@ -1,3 +1,14 @@
+body {
+  background-color: #4fa9ff;
+}
+.appItself {
+  display: flex;
+}
+.appTitle {
+  text-align: center;
+  font-size: 50px;
+  color: whitesmoke;
+}
 .contactInfo {
   font-size: 15px;
   color: black;
@@ -11,7 +22,60 @@
 .flexBox {
   display:flex;
   flex-direction: column;
+  /* margin-right: 430px; */
+}
+.boxed {
+  font-weight: bold;
+  font-style: italic;
+  margin-top: 10px;
 }
 .saveContact {
   font-size: 20px;
+  margin-top: 10px;
+}
+#newContact {
+  font-size: 19px;
+  letter-spacing: 1px;
+  padding: 10px;
+  background-color: #2e8bf4;
+  color: #edf6ff;
+  border: solid black;
+  /* margin-right: 430px; */
+}
+
+.newContactDiv {
+  margin-left: 90px;
+}
+.contactListTitle {
+  font-size: 19px;
+  letter-spacing: 1px;
+  padding: 10px;
+  background-color: #2e8bf4;
+  color: #edf6ff;
+  border: solid black;
+  margin-top: 13px;
+}
+.contactList {
+  margin-left: 60px;
+}
+
+.error {
+  font-size: 12px;
+  background-color: #f5f9a7;
+  color: red;
+  border: solid black;
+  margin-top: 10px;
+  margin-left: 90px;
+  margin-right:90px;
+  padding: 4px;
+}
+.message {
+  margin-left: 90px;
+  margin-right:90px;
+  margin-top: 10px;
+  font-size: 15px;
+  background-color: #f5f9a7;
+  color: black;
+  border: solid black;
+  padding: 4px;
 }

@@ -2,7 +2,7 @@
 // Contact component and the ContactCollection component.
 
 
-import hoot from "./Contact"
+import contactInfo from "./Contact"
 import contactData from "./ContactCollection"
 
 let getContactList = () => {
